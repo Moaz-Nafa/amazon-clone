@@ -1,0 +1,80 @@
+[debug] [2023-12-15T17:29:37.932Z] ----------------------------------------------------------------------
+[debug] [2023-12-15T17:29:37.936Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\moaz\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve -p 5001
+[debug] [2023-12-15T17:29:37.936Z] CLI Version:   13.0.1
+[debug] [2023-12-15T17:29:37.937Z] Platform:      win32
+[debug] [2023-12-15T17:29:37.937Z] Node Version:  v18.18.0
+[debug] [2023-12-15T17:29:37.938Z] Time:          Fri Dec 15 2023 19:29:37 GMT+0200 (Eastern European Standard Time)
+[debug] [2023-12-15T17:29:37.938Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-15T17:29:38.125Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-15T17:29:38.126Z] > authorizing via signed-in user (moaznafa1995@gmail.com)
+[debug] [2023-12-15T17:29:38.126Z] [iam] checking project clone-1ec93 for permissions ["firebase.projects.get"]
+[debug] [2023-12-15T17:29:38.129Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-1ec93:testIamPermissions [none]
+[debug] [2023-12-15T17:29:38.129Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-1ec93:testIamPermissions x-goog-quota-user=projects/clone-1ec93
+[debug] [2023-12-15T17:29:38.129Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-1ec93:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-15T17:29:39.034Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-1ec93:testIamPermissions 200
+[debug] [2023-12-15T17:29:39.035Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-1ec93:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-15T17:29:39.038Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-1ec93 [none]
+[debug] [2023-12-15T17:29:39.491Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-1ec93 200
+[debug] [2023-12-15T17:29:39.492Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-1ec93 {"projectId":"clone-1ec93","projectNumber":"545159904450","displayName":"amazon-clone","name":"projects/clone-1ec93","resources":{"hostingSite":"clone-1ec93"},"state":"ACTIVE","etag":"1_be17712f-9b34-469b-92b1-a7e7592672f1"}
+[info] 
+[info] === Serving from 'E:\Porgramming\Projects\React-Projects\amazon-clone\my-app'...
+[info] 
+[debug] [2023-12-15T17:29:39.505Z] defaultcredentials: writing to file C:\Users\moaz\AppData\Roaming\firebase\moaznafa1995_gmail_com_application_default_credentials.json
+[debug] [2023-12-15T17:29:39.506Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-1ec93/sites 
+[debug] [2023-12-15T17:29:39.510Z] Setting GAC to C:\Users\moaz\AppData\Roaming\firebase\moaznafa1995_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\moaz\\AppData\\Roaming\\firebase\\moaznafa1995_gmail_com_application_default_credentials.json"}}
+[debug] [2023-12-15T17:29:39.511Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-1ec93/adminSdkConfig [none]
+[debug] [2023-12-15T17:29:39.912Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-1ec93/adminSdkConfig 200
+[debug] [2023-12-15T17:29:39.913Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-1ec93/adminSdkConfig {"projectId":"clone-1ec93","storageBucket":"clone-1ec93.appspot.com"}
+[debug] [2023-12-15T17:29:40.652Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-1ec93/sites 200
+[debug] [2023-12-15T17:29:40.652Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-1ec93/sites {"sites":[{"name":"projects/clone-1ec93/sites/clone-1ec93","defaultUrl":"https://clone-1ec93.web.app","appId":"1:545159904450:web:6104a3ae0ab6e32ced8f5b","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-15T17:29:40.652Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-1ec93/webApps/1:545159904450:web:6104a3ae0ab6e32ced8f5b/config [none]
+[debug] [2023-12-15T17:29:41.476Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-1ec93/webApps/1:545159904450:web:6104a3ae0ab6e32ced8f5b/config 200
+[debug] [2023-12-15T17:29:41.477Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-1ec93/webApps/1:545159904450:web:6104a3ae0ab6e32ced8f5b/config {"projectId":"clone-1ec93","appId":"1:545159904450:web:6104a3ae0ab6e32ced8f5b","storageBucket":"clone-1ec93.appspot.com","apiKey":"AIzaSyBW8E92lirGTXe4S4IxhDCclCYkqIb5pIM","authDomain":"clone-1ec93.firebaseapp.com","messagingSenderId":"545159904450","measurementId":"G-VNEW1JPEW7"}
+[debug] [2023-12-15T17:29:41.485Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-1ec93 [none]
+[debug] [2023-12-15T17:29:41.846Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-1ec93 200
+[debug] [2023-12-15T17:29:41.846Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-1ec93 {"projectId":"clone-1ec93","projectNumber":"545159904450","displayName":"amazon-clone","name":"projects/clone-1ec93","resources":{"hostingSite":"clone-1ec93"},"state":"ACTIVE","etag":"1_be17712f-9b34-469b-92b1-a7e7592672f1"}
+[info] i  functions: Watching "E:\Porgramming\Projects\React-Projects\amazon-clone\my-app\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\Porgramming\\Projects\\React-Projects\\amazon-clone\\my-app\\functions\" for Cloud Functions..."}}
+[info] i  hosting[clone-1ec93]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[clone-1ec93]: Local server: http://localhost:5003 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5003\u001b[22m\u001b[24m"}}
+[debug] [2023-12-15T17:29:41.921Z] Validating nodejs source
+[debug] [2023-12-15T17:29:44.119Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-15T17:29:44.120Z] Building nodejs source
+[debug] [2023-12-15T17:29:44.120Z] Failed to find version of module node: reached end of search path E:\Porgramming\Projects\React-Projects\amazon-clone\my-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-15T17:29:44.125Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-15T17:29:44.141Z] Found firebase-functions binary at 'E:\Porgramming\Projects\React-Projects\amazon-clone\my-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8846
+
+[debug] [2023-12-15T17:29:48.212Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5002/clone-1ec93/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5002/clone-1ec93/us-central1/api)."}}
